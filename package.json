@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "dependencies": {
+    "@cycle/dom": "^20.4.0",
+    "@cycle/http": "^14.9.0",
+    "@cycle/run": "^4.4.0",
+    "snabbdom-pragma": "^2.7.0",
+    "xstream": "^11.7.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "browser-sync": "^2.24.5",
+    "jest": "^23.2.0",
+    "snabbdom-selector": "^3.0.0",
+    "ts-jest": "^23.0.0",
+    "tsify": "^4.0.0",
+    "typescript": "^2.9.2",
+    "watchify": "^3.11.0"
+  },
+  "scripts": {
+    "browser-sync": "browser-sync start --open --serveStatic ./public -f ./public",
+    "watchify": "watchify --verbose -p tsify -o ./public/script.js ./src/index.ts"
+  }
+}
